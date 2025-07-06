@@ -1,0 +1,96 @@
+.footer {
+  background: #1E2A38;
+  color: white;
+  padding: 4rem 5rem 2rem;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  width: 100%;
+}
+
+.footer-content {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: 1.45fr 1fr 1.3fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+.footer-section h3.footer-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-family: "montserrat", sans-serif;
+}
+
+.logo-icon img.logo-img {
+  max-width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  color: #7f8285;
+  line-height: 1.38;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.contact-info,
+.business-hours,
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #d1d5db;
+}
+
+.contact-icon {
+  width: 20px;
+  margin-top: 0.3rem;
+}
+
+.hours-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #d1d5db;
+}
+
+.quick-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #f59e0b;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
