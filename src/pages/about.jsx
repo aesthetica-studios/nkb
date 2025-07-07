@@ -148,7 +148,7 @@ function About() {
                 <div className="about-leader-info">
                     {/* <div className="about-quote-icon"><img src={quote}/></div> */}
                     <p className="about-leader-quote">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    Lorem ipsum dolor sit amet, adipiscing 
                     elit, sit et massa mi. Aliquam ut hendrerit urna. 
                     Pellentesque sit amet sapien rhoncus, mattis ligula 
                     consectetur, ultrices mauris. Maecenas vitae mauris 
