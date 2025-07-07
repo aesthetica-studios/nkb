@@ -8,6 +8,10 @@ import stat1 from '../assets/stat1.svg';
 import stat2 from '../assets/stat2.svg';
 import stat3 from '../assets/stat3.svg';
 import stat4 from '../assets/stat4.png';
+import abouthero from '../assets/abouthero.png';
+import ceo from '../assets/sudhirgupta.png';
+import quote from '../assets/quote.png';
+import construction from '../assets/construction.png' 
 // import stat1 from '../assets/stat1.svg';
 // import stat2 from '../assets/stat2.svg';
 // import stat3 from '../assets/stat3.svg';
@@ -28,8 +32,7 @@ function About() {
         <div className="about-container">
             <section className="about-about-section">
             <div className="about-logo-card">
-                <div className="about-logo-large">K</div>
-                <div className="about-company-name">NKB Inc.</div>
+                <img className='about-img' src={abouthero}/>
             </div>
             <div className="about-about-content">
                 <h2>About NKB Inc.</h2>
@@ -136,10 +139,14 @@ function About() {
             <div className="about-leadership-content">
             <h2>Meet Our Leadership</h2>
             <div className="about-leadership-slider">
+                <div className='leader-img'>
+                <img src={ceo} alt="Mr. Sudhir Gupta" className="about-leader-image" />
+                <div>
+                <div className="about-quote-icon"><img src={quote}/></div>
                 <div className="about-leader-card">
-                <img src="example.png" alt="Mr. Sudhir Gupta" className="about-leader-image" />
+
                 <div className="about-leader-info">
-                    <div className="about-quote-icon">"</div>
+                    {/* <div className="about-quote-icon"><img src={quote}/></div> */}
                     <p className="about-leader-quote">
                     Lorem ipsum dolor sit amet, consectetur adipiscing 
                     elit, sit et massa mi. Aliquam ut hendrerit urna. 
@@ -151,10 +158,12 @@ function About() {
                     <p className="about-leader-title">Partner In NKB Inc.</p>
                 </div>
                 </div>
-                <div className="about-slider-nav">
-                <button className="about-nav-btn"></button>
-                <button className="about-nav-btn"></button>
                 </div>
+                </div>
+                {/* <div className="about-slider-nav">
+                <button className="about-nav-btn"></button>
+                <button className="about-nav-btn"></button>
+                </div> */}
                 <div className="about-slider-dots">
                 <span className="about-dot active"></span>
                 <span className="about-dot"></span>
@@ -169,7 +178,7 @@ function About() {
         <div className="about-container">
             <div className="about-management-content">
             <div className="about-management-image">
-                <img src="example.png" alt="Construction management" />
+                <img src={construction} alt="Construction management" />
             </div>
             <div className="about-management-text">
                 <h2>Management Mantra</h2>

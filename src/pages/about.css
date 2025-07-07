@@ -2,7 +2,7 @@
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 /* Header Styles */
@@ -85,13 +85,13 @@
 .about-about-section {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
 }
 
 .about-logo-card {
   background: white;
-  padding: 2rem;
+  padding: 4rem 2rem;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   text-align: center;
@@ -193,7 +193,10 @@
 
 /* Values Section */
 .about-values-section {
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  background-image: url('../assets/aboutbg.png');
+  background-size: cover;
+  background-position: center;
+  /* background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); */
   padding: 4rem 0;
   color: white;
 }
@@ -224,7 +227,7 @@
 
 .about-value-number {
   background-color: #f39c12;
-  color: white;
+  color: #1E2A38;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -260,8 +263,17 @@
 }
 
 /* Leadership Section */
+
+.leader-img{
+  display: flex;
+  align-items: center;
+}
+
 .about-leadership-section {
   background-color: #ecf0f1;
+  background-image: url('../assets/ceobg.png');
+  background-size: cover;
+  background-position: center;
   padding: 4rem 0;
 }
 
@@ -288,33 +300,45 @@
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   gap: 2rem;
+  width: 120%;
 }
 
 .about-leader-image {
-  width: 150px;
-  height: 200px;
+  height: 360px;
   border-radius: 10px;
   object-fit: cover;
+  margin-right: -20px;
 }
 
 .about-leader-info {
+  position: relative;
   flex: 1;
   text-align: left;
 }
 
 .about-quote-icon {
+  position: absolute;
+  top: 12px;
+  left: 300px;
+  font-family: 'montserrat', monospace;
   background-color: #f39c12;
-  color: white;
+  color: black;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  margin-bottom: -10px;
+}
+
+.about-quote-icon img {
+  margin-top: 8px;
+  width: 16px;
 }
 
 .about-leader-quote {
@@ -381,7 +405,9 @@
 
 /* Management Section */
 .about-management-section {
-  background-color: #f8f9fa;
+  background-image: url('../assets/managementbg.png');
+  background-position: center;
+  background-size : cover;
   padding: 4rem 0;
 }
 
@@ -529,6 +555,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.about-img {
+  width: 70%;
+  height: auto;
 }
 
 
