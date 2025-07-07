@@ -1,26 +1,18 @@
-import React from 'react'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import Leadership from './components/Leadership'
-import Values from './components/Values'
-import Projects from './components/Projects'
-import Footer from './components/Footer'
-import End from './components/End'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home.jsx';
+import About from './pages/about.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <Services />
-      <Leadership />
-      <Values />
-      <Projects />
-      <Footer />
-      <End />
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

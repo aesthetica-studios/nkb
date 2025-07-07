@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
@@ -15,11 +16,41 @@ const Header = () => {
           </div>
           
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-            <a href="#home" className="nav-link active">Home</a>
-            <a href="#about" className="nav-link">About Us</a>
-            <a href="#projects" className="nav-link">Projects</a>
-            <a href="#services" className="nav-link">Services</a>
-            <a href="#why" className="nav-link">Why Us?</a>
+            <NavLink 
+              to="/" 
+              end 
+              className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            >
+              Home
+            </NavLink>
+
+            <NavLink to="/about" 
+              end 
+              className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            >
+              About Us
+            </NavLink>
+
+            <NavLink to="/Projects" 
+              end 
+              className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            >
+              Projects
+            </NavLink>
+
+            <NavLink to="/Services" 
+              end 
+              className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            >
+              Services
+            </NavLink>
+
+            <NavLink to="/us" 
+              end 
+              className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            >
+              Why Us?
+            </NavLink>
           </nav>
 
           <a href="#contact" className="btn btn-primary contact-btn">Contact Us</a>
