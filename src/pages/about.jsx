@@ -3,15 +3,15 @@ import styles from './about.css';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import End from '../components/End'
-import womenInCap from '../assets/womenInCap.png';
+import womenInCap from '../assets/womenInCap.webp';
 import stat1 from '../assets/stat1.svg';
 import stat2 from '../assets/stat2.svg';
 import stat3 from '../assets/stat3.svg';
-import stat4 from '../assets/stat4.png';
-import abouthero from '../assets/abouthero.png';
-import ceo from '../assets/sudhirgupta.png';
-import quote from '../assets/quote.png';
-import construction from '../assets/construction.png' 
+import stat4 from '../assets/stat4.webp';
+import abouthero from '../assets/abouthero.webp';
+import ceo from '../assets/sudhirgupta.webp';
+import quote from '../assets/quote.webp';
+import construction from '../assets/construction.webp' 
 // import stat1 from '../assets/stat1.svg';
 // import stat2 from '../assets/stat2.svg';
 // import stat3 from '../assets/stat3.svg';
