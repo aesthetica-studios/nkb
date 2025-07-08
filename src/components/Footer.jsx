@@ -36,9 +36,10 @@ const Footer = () => {
               </div>
               <div className="contact-item">
                 <img src={email} className="contact-icon"/>
-                <span>admin@nkbinc.com<br />account@nkbinc.com</span>
+                <span><a href="mailto:admin@nkbinc.com" className="mail-link">admin@nkbinc.com</a><br />
+                      <a href="mailto:account@nkbinc.com" className="mail-link">account@nkbinc.com</a></span>
               </div>
-            </div>
+              </div>
           </div>
 
           <div className="footer-section">

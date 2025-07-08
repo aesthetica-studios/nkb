@@ -94,3 +94,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+.mail-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.mail-link:hover {
+  color: #f59e0b; /* or any highlight color you use */
+}

@@ -9,6 +9,7 @@ import img2 from '../assets/card1.webp';
 import img3 from '../assets/card1.webp';
 import img4 from '../assets/card1.webp';
 import img5 from '../assets/card1.webp';
+import bg from '../assets/servicesBg.png';
 
 const services = [
   {
@@ -68,7 +69,10 @@ const services = [
 
 const ServicesPage = () => {
   return (
-    <div style={{ background: '#0e1a2b', padding: '60px 0' }}>
+    <div style={{ 
+        backgroundColor: '#18222D',
+        padding: '60px 0'
+        }}>
     <Header/>
       {services.map((s, i) => (
         <ServiceBox key={i} {...s} />
