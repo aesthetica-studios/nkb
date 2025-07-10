@@ -1,0 +1,95 @@
+.value-card {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.value-card.left {
+  justify-content: flex-start;
+}
+
+.value-card.right {
+  justify-content: flex-end;
+}
+
+.value-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 600px;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.value-content:hover {
+  transform: translateY(-5px);
+}
+
+.value-card.left .value-content {
+  background: #2c3e50;
+  color: white;
+}
+
+.value-card.right .value-content {
+  background: white;
+  color: #2c3e50;
+}
+
+.value-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.value-card.left .value-icon {
+  color: #f39c12;
+}
+
+.value-card.right .value-icon {
+  color: #f39c12;
+}
+
+.value-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.value-card.left .value-text h3 {
+  color: #f39c12;
+}
+
+.value-card.right .value-text h3 {
+  color: #2c3e50;
+}
+
+.value-text p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.value-card.left .value-text p {
+  color: #bdc3c7;
+}
+
+.value-card.right .value-text p {
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .value-card.left,
+  .value-card.right {
+    justify-content: center;
+  }
+  
+  .value-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .value-icon {
+    font-size: 2.5rem;
+  }
+}
