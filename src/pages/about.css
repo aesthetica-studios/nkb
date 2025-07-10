@@ -90,8 +90,8 @@
 }
 
 .about-logo-card {
-  background: white;
-  padding: 4rem 2rem;
+  background: #fdfcfc;
+  padding: 4rem .5rem;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   text-align: center;
@@ -121,11 +121,11 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: #2c3e50;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .about-about-text {
-  color: #7f8c8d;
+  color: #615B5B;
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
@@ -133,8 +133,9 @@
 
 .about-vision-text {
   color: #2c3e50;
+  font-family: inter;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Stats Section */
@@ -153,12 +154,11 @@
 }
 
 .about-stat-item {
-  text-align: center;
-  color: white;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  gap: 1.2rem;
+  color: white;
+  justify-content: flex-start;
 }
 
 .about-stat-item img {
@@ -171,24 +171,36 @@
 .about-stat-icon {
   width: 50px;
   height: 50px;
-  margin: 0 auto 1rem;
-  background-color: #f39c12;
+  /* background-color: #f39c12; */
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.about-stat-icon img {
+  width: 55px;  /* Or whatever fits nicely inside */
+  height: 55px;
+  object-fit: contain;
+  /*filter: brightness(0) invert(1);  Optional if you want to make white icons visible */
+}
+.about-stat-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.05rem;
 }
 
 .about-stat-number {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: white;
 }
 
 .about-stat-label {
-  color: #bdc3c7;
   font-size: 0.9rem;
+  color: #bdc3c7;
 }
 
 /* Values Section */
@@ -270,7 +282,7 @@
 }
 
 .about-leadership-section {
-  background-color: #ecf0f1;
+  background-color: #FEFEFE;
   background-image: url('../assets/ceobg.webp');
   background-size: cover;
   background-position: center;
@@ -279,6 +291,29 @@
 
 .about-leadership-content {
   text-align: center;
+}
+.carousel-btn {
+  background: #ffc042;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 1rem;
+}
+.prev-btn {
+  left: -110px; /* Pushes the left arrow to the left */
+}
+
+.next-btn {
+  right: -180px; /* Pushes the right arrow to the right */
+}
+.about-leadership-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .about-leadership-content h2 {
@@ -293,6 +328,7 @@
   max-width: 600px;
   margin: 0 auto;
 }
+
 
 .about-leader-card {
   background: white;
@@ -318,12 +354,10 @@
   flex: 1;
   text-align: left;
 }
-
 .about-quote-icon {
-  position: absolute;
-  top: 12px;
-  left: 300px;
-  font-family: 'montserrat', monospace;
+  position: absolute;  
+  top: 1rem;
+  left: 300px; /* aligned with card edge */
   background-color: #f39c12;
   color: black;
   width: 40px;
@@ -333,8 +367,10 @@
   align-items: center;
   justify-content: center;
   font-size: 1.7rem;
-  margin-bottom: -10px;
+  z-index: 2;
+ 
 }
+
 
 .about-quote-icon img {
   margin-top: 8px;
