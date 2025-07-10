@@ -1,12 +1,11 @@
 .feature-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background: transparent;
   border: 2px solid #F4A300;
   border-radius: 15px;
-  padding: 2rem;
+  padding: 4rem 1rem;
   text-align: center;
   transition: all 0.3s ease;
   color: white;
@@ -18,7 +17,8 @@
 }
 
 .feature-icon {
-  margin-bottom: 1rem;
+  padding-bottom: 60px;
+  padding-top: 40px;
   width: 60px;
   height: 60px;
 }
