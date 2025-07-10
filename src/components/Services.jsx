@@ -12,7 +12,6 @@ import card8 from '../assets/card3.webp'
 import card9 from '../assets/card3.webp'
 import card10 from '../assets/card3.webp'
 import card11 from '../assets/card3.webp'
-
 const Services = () => {
   const services = [
     {

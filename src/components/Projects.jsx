@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import './Projects.css'
+import pattern1 from '../assets/pattern1.svg'
 
 const Projects = () => {
   const [currentProject, setCurrentProject] = useState(0)
@@ -35,7 +36,25 @@ const Projects = () => {
   }
 
   return (
-    <section className="projects section">
+    <section className="projects section" style={{ position: 'relative', overflow: 'hidden' }}>
+  {/* Pattern overlay */}
+  <div
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundImage: `url(${pattern1})`,
+      backgroundRepeat: 'repeat',
+      backgroundSize: '600px auto', // 👈 increase size here
+      backgroundPosition: 'center',
+      opacity: 0.1,                  // 👈 control opacity here
+      zIndex: 0,
+      pointerEvents: 'none'
+    }}
+  ></div>
+
       <div className="container">
         <div className="projects-header">
           <h2 className="section-title">Recent Projects</h2>

@@ -11,18 +11,22 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  font-family: inter;
+  font-weight: 400;
 }
 
 .hero-subtitle {
   color: #6b7280;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: inter;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 
 .hero-title {
-  font-size: 3.5rem;
-  font-weight: 800;
+  font-family: montserrat;
+  font-size: 3rem;
+  font-weight: 700;
   color: #1f2937;
   line-height: 1.1;
   margin-bottom: 1.5rem;
@@ -36,35 +40,56 @@
 }
 
 .hero-btn {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   padding: 15px 30px;
+  background: linear-gradient(to right, #F7C547, #F4A300);
+  border: none;
   margin-bottom: 3rem;
+  border-radius: 9999px;
+  color: #1f2937;
+  font-weight: 300;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
 }
+
 
 .hero-stats {
   display: flex;
-  gap: 1rem;
+  gap: 0.6rem; /* more space between items if needed */
   border: 1px solid #F4A300;
   border-radius: 32px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.25);
-  /* max-width: 400px; */
+  padding: 0.2rem 2rem; /* add top/bottom and left/right padding */
+  width: fit-content; /* shrink to fit content width */
+  margin: 0; /* center it if needed */
+  }
+  .stat-divider {
+  width: 1px;
+  background-color: #d1d5db; /* Light gray */
+  height: 60px;
+  align-self: center;
 }
 
 .stat-item {
   padding: 1.5rem;
   border-radius: 12px;
-  text-align: center;
+  text-align: left;
   min-width: 140px;
 }
 
 .stat-number {
-  font-size: 2rem;
-  font-weight: 700;
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-weight: 600;
   color: #1f2937;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.05rem;
+  
 }
 
 .stat-label {
+  font-family: inter;
+  font-weight: 400;
   color: #6b7280;
   font-size: 0.9rem;
 }
@@ -74,7 +99,7 @@
 }
 
 .hero-image img {
-  width: 100%;
+  width: 115%;
   height: auto;
   border-radius: 20px;
   /* box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); */
@@ -103,4 +128,9 @@
   .stat-item {
     min-width: 120px;
   }
+  @media (max-width: 768px) {
+  .stat-divider {
+    display: none;
+  }
+}
 }

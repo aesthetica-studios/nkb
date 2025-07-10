@@ -1,5 +1,5 @@
 .values {
-  background: white;
+  background: #ECECEC;
 }
 
 .values-header {
@@ -15,7 +15,7 @@
 
 .value-card {
   color: white;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 1rem;
   border-radius: 12px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -41,11 +41,15 @@
   font-weight: 600;
   margin-bottom: 1rem;
   color: white;
+  font-family: montserrat;
 }
 
 .value-description {
+  font-size: 0.9rem;
   color: #d1d5db;
   line-height: 1.6;
+  font-weight: 400;
+  font-family: inter;
 }
 
 @media (max-width: 768px) {
