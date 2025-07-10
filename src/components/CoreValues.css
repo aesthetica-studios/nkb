@@ -1,6 +1,6 @@
 .core-values-section {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 4rem 0;
+  background-color: #FFFCEE;
 }
 
 .core-values-section h2 {
@@ -10,10 +10,16 @@
   margin-bottom: 3rem;
 }
 
-.values-container {
+.value-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+#val-0{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {

@@ -38,10 +38,10 @@ const Values = () => {
 
         <div className="values-grid">
           {values.map((value, index) => (
-            <div key={index} className="value-card">
-              <div className="value-icon">  <img src={value.img} alt={value.title} /> </div>
-              <h3 className="value-title">{value.title}</h3>
-              <p className="value-description">{value.description}</p>
+            <div key={index} className="values-card">
+              <div className="values-icon">  <img src={value.img} alt={value.title} /> </div>
+              <h3 className="values-title">{value.title}</h3>
+              <p className="values-description">{value.description}</p>
             </div>
           ))}
         </div>

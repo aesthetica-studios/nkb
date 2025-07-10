@@ -1,6 +1,10 @@
 .feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: transparent;
-  border: 2px solid #f39c12;
+  border: 2px solid #F4A300;
   border-radius: 15px;
   padding: 2rem;
   text-align: center;
@@ -14,16 +18,22 @@
 }
 
 .feature-icon {
-  font-size: 3rem;
   margin-bottom: 1rem;
-  color: #f39c12;
+  width: 60px;
+  height: 60px;
+}
+
+.feature-icon img{
+  object-fit: contain;
+  width: 60px;
+  height: 60px;
 }
 
 .feature-card h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #f39c12;
+  color: #F4A300;
 }
 
 .feature-card p {

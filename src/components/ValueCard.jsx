@@ -6,7 +6,7 @@ const ValueCard = ({ icon, title, description, position }) => {
     <div className={`value-card ${position}`}>
       <div className="value-content">
         <div className="value-icon">
-          {icon}
+          <img src={icon}/>
         </div>
         <div className="value-text">
           <h3>{title}</h3>

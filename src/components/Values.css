@@ -13,7 +13,7 @@
   gap: 2rem;
 }
 
-.value-card {
+.values-card {
   color: white;
   padding: 2.5rem 1rem;
   border-radius: 12px;
@@ -21,22 +21,22 @@
   transition: transform 0.3s ease;
 }
 
-.value-card:hover {
+.values-card:hover {
   transform: translateY(-5px);
 }
 
-.value-icon {
+.values-icon {
   margin-bottom: 1.5rem;
   color: #f59e0b;
 }
 
-.value-icon img {
+.values-icon img {
   width: 60px;
   height: 60px;
   object-fit: scale-down;
 }
 
-.value-title {
+.values-title {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -44,7 +44,7 @@
   font-family: montserrat;
 }
 
-.value-description {
+.values-description {
   font-size: 0.9rem;
   color: #d1d5db;
   line-height: 1.6;

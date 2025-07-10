@@ -1,7 +1,7 @@
 .value-card {
   display: flex;
-  margin-bottom: 2rem;
 }
+
 
 .value-card.left {
   justify-content: flex-start;
@@ -14,11 +14,13 @@
 .value-content {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  max-width: 600px;
-  padding: 2rem;
-  background: white;
-  border-radius: 20px;
+  gap: 8px;
+  /* max-width: 600px; */
+  width: 52vw;
+  min-width: 300px;
+  padding: 2rem ;
+  /* background: white; */
+  border-radius: 60px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -28,18 +30,31 @@
 }
 
 .value-card.left .value-content {
-  background: #2c3e50;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background: #172638;
   color: white;
+  border-radius: 0 32px 32px 0;
+  padding-left: 2 rem;
+  /* position: absolute;
+  left: 0; */
 }
 
 .value-card.right .value-content {
-  background: white;
-  color: #2c3e50;
+  /* justify-content: space-evenly; */
+  border: 4px solid #172638;
+  border-right: 0;
+  color: #172638;
+  border-radius: 32px 0 0 32px;
+  padding-right: 2 rem;
+  /* position: absolute;
+  right: 0; */
 }
 
 .value-icon {
-  font-size: 3rem;
   flex-shrink: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .value-card.left .value-icon {
@@ -61,7 +76,7 @@
 }
 
 .value-card.right .value-text h3 {
-  color: #2c3e50;
+  color: #172638;
 }
 
 .value-text p {
@@ -77,6 +92,31 @@
   color: #6c757d;
 }
 
+/* from other values */
+
+.value-icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: scale-down;
+}
+
+/* .value-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: montserrat;
+}
+
+.value-description {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: inter;
+} */
+
+
 @media (max-width: 768px) {
   .value-card.left,
   .value-card.right {
@@ -86,10 +126,18 @@
   .value-content {
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
+    gap: 1 rem;
+  }
+
+  .value-card.left .value-content{
+    border-radius: 32px;
+    padding-right: 2 rem;
   }
   
-  .value-icon {
-    font-size: 2.5rem;
+  .value-card.right .value-content{
+    border-radius: 32px;
+    padding-right: 2 rem;
+    flex-direction: row;
+    border-right: 4px solid #172638;
   }
 }
