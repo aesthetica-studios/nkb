@@ -1,10 +1,13 @@
 import React from 'react'
 import './Hero.css'
 import heroImg from '../assets/hero.webp'
+import pattern1 from '../assets/pattern1.svg'
 
 const Hero = () => {
   return (
-    <section className="hero">
+    
+  
+   <section className="hero">
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">
@@ -27,6 +30,8 @@ const Hero = () => {
                 <div className="stat-number">230+</div>
                 <div className="stat-label">Satisfied Customers</div>
               </div>
+              <div class="stat-divider"></div>
+                
               <div className="stat-item">
                 <div className="stat-number">520+</div>
                 <div className="stat-label">Completed Projects</div>

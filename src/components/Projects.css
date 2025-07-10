@@ -1,7 +1,10 @@
 .projects {
-  background: #2E3946;
+  
+  background-color: #2E3946;
   color: white;
+  
 }
+
 
 .projects .section-title,
 .projects .section-subtitle {
