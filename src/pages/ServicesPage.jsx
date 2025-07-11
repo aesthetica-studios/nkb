@@ -71,7 +71,8 @@ const ServicesPage = () => {
   return (
     <div style={{ 
         backgroundColor: '#18222D',
-        padding: '60px 0'
+        padding: '60px 0',
+        paddingBottom: '0'
         }}>
     <Header/>
     <div className='container sp-head'>
