@@ -53,7 +53,7 @@ const Header = () => {
             </NavLink>
           </nav>
 
-          <a href="#contact" className="btn btn-primary contact-btn">Contact Us</a>
+          <NavLink to="/contact" className="btn btn-primary contact-btn">Contact Us</NavLink>
 
           <button 
             className="mobile-menu-btn"

@@ -4,10 +4,10 @@ import groupImage from '../assets/groupImage.png'
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section className="heros-section">
       <div className="containers">
-        <div className="hero-content">
-          <div className="hero-text flex-r">
+        <div className="heros-content">
+          <div className="heros-text flex-r">
             <div className='gaps'>
             <h1>Why Choose Us?</h1>
             <p>
@@ -18,8 +18,8 @@ const HeroSection = () => {
             </p>
             </div>
           </div>
-          <div className="hero-image">
-              <img src={groupImage} className='hero-img'/>
+          <div className="heros-image">
+              <img src={groupImage} className='heros-img'/>
           </div>
         </div>
       </div>

@@ -20,19 +20,19 @@ const Leadership = () => {
           <div className='leadership-features-container'>
             <div className="leadership-features">
               <div className="feature-item">
-                <span className="feature-icon">✓</span>
+                <span className="features-icon">✓</span>
                 <span>Delivering Quality Construction Services</span>
               </div>
               <div className="feature-item">
-                <span className="feature-icon">✓</span>
+                <span className="features-icon">✓</span>
                 <span>Innovating & Providing Problem Solving</span>
               </div>
               <div className="feature-item">
-                <span className="feature-icon">✓</span>
+                <span className="features-icon">✓</span>
                 <span>Improving Value & Client Satisfaction</span>
               </div>
               <div className="feature-item">
-                <span className="feature-icon">✓</span>
+                <span className="features-icon">✓</span>
                 <span>Overcoming Unique Project Challenges</span>
               </div>
             </div>

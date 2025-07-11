@@ -1,7 +1,6 @@
 .hero {
   background: #f9fafb;
   padding: 120px 0 80px;
-  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -96,11 +95,14 @@
 
 .hero-image {
   position: relative;
+
 }
 
 .hero-image img {
-  height: auto;
+  object-fit: contain;
   border-radius: 20px;
+  width: 100%;
+  height: auto;
   /* box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); */
 }
 
