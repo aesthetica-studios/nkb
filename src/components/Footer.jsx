@@ -28,17 +28,17 @@ const Footer = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <img src={map} className="contact-icon"/>
-                <span>d-242, second floor, sector 10, noida-201301</span>
+                <span>D-206, Second Floor, Sector 10, Noida, U.P, India - 201301</span>
               </div>
               <div className="contact-item">
                 <img src={phone} className="contact-icon"/>
-                <span><a href="tel:‪+917834568790‬" className="phone-link">‪+91-7834568790‬</a><br/>
-                <a href="tel:‪+917834568790‬" className="phone-link">‪+91-7834568790‬</a></span>
+                <span><a href="tel:‪+919354944409‬" className="phone-link">‪+91-9354944409‬</a><br/>
+                <a href="tel:‪+919582234704‬" className="phone-link">‪+91-9582234704‬</a></span>
               </div>
               <div className="contact-item">
                 <img src={email} className="contact-icon"/>
                 <span><a href="mailto:admin@nkbinc.com" className="mail-link">admin@nkbinc.com</a><br />
-                      <a href="mailto:account@nkbinc.com" className="mail-link">account@nkbinc.com</a></span>
+                      </span>
               </div>
               </div>
           </div>
@@ -70,7 +70,7 @@ const Footer = () => {
               <a href="#services" className='flex'><img src={arrow}/> Our Services</a>
               <a href="#projects" className='flex'><img src={arrow}/> Projects</a>
               <a href="#contact" className='flex'><img src={arrow}/> Contact Us</a>
-              <a href="#terms" className='flex'><img src={arrow}/> Terms & Conditions</a>
+              
               
             </div>
           </div>

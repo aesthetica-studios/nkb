@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 import './Services.css'
 import card1 from '../assets/card1.webp'
 import card2 from '../assets/card2.webp'
 import card3 from '../assets/card3.webp'
-import card4 from '../assets/card3.webp'
+import card4 from '../assets/card4.webp'
 import card5 from '../assets/card3.webp'
 import card6 from '../assets/card3.webp'
-import card7 from '../assets/card3.webp'
+import card7 from '../assets/card7.webp'
 import card8 from '../assets/card3.webp'
-import card9 from '../assets/card3.webp'
-import card10 from '../assets/card3.webp'
-import card11 from '../assets/card3.webp'
+import card9 from '../assets/card9.webp'
+import card10 from '../assets/card10.webp'
+import card11 from '../assets/card11.webp'
 const Services = () => {
+  const navigate = useNavigate();
   const services = [
     {
       title: "Project Management",
@@ -83,8 +85,13 @@ const Services = () => {
     setCurrentGroup((prev) => (prev - 1 + totalGroups) % totalGroups)
   }
 
+  
+  const handleViewAll = () => {
+    navigate('/services') // 👈 Navigate to the desired route
+  }
+
   return (
-    <section className="services section">
+    <section id="service" className="services section">
       <div className="container">
         <div className="services-header">
           <div className='flex-column'>
@@ -94,7 +101,7 @@ const Services = () => {
               Industrial Services Focused On Maximizing Your Efficiency And Value.
             </p>
           </div>
-          <button className="btn btn-primary view-all-btn">
+          <button className="btn btn-primary view-all-btn" onClick={handleViewAll}>
             View All Services →
           </button>
         </div>

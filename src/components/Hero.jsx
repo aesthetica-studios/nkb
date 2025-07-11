@@ -21,9 +21,12 @@ const Hero = () => {
               Anything But Typical. Because Client Problems Are Seldom 
               Typical Either.
             </p>
-            <button className="btn btn-primary hero-btn">
-              Explore More →
-            </button>
+            <button className="btn btn-primary hero-btn" onClick={() => {
+  document.getElementById('service').scrollIntoView({ behavior: 'smooth' });
+}}>
+  Explore More →
+</button>
+
             
             <div className="hero-stats">
               <div className="stat-item">

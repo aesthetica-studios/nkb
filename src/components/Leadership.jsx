@@ -1,9 +1,15 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom' 
 import './Leadership.css'
 import img from '../assets/image2.webp'
 import yrs from '../assets/exp.webp'
 
 const Leadership = () => {
+  const navigate = useNavigate(); // ← ✅ useNavigate instance
+
+  const handleLearnMore = () => {
+    navigate('/about') // ← ✅ Navigate to the About page
+  }
   return (
     <section className="leadership section">
       <div className="container">
@@ -39,7 +45,7 @@ const Leadership = () => {
             <img src={yrs} alt="20 Years Experience" className='exp-img'/>
           </div>
 
-            <button className="btn btn-primary leadership-btn">
+            <button className="btn btn-primary leadership-btn" onClick={handleLearnMore}>
               Learn More →
             </button>
           </div>
