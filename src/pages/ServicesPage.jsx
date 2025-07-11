@@ -74,8 +74,12 @@ const ServicesPage = () => {
         padding: '60px 0'
         }}>
     <Header/>
+    <div className='container sp-head'>
+      <h1> Our Comprehensive Services</h1>
+      <p>From initial concept to successful completion, NKB Inc. delivers expert consultation, precise design management, and reliable industrial support tailored to your needs.</p>
+    </div>
       {services.map((s, i) => (
-        <ServiceBox key={i} {...s} />
+        <ServiceBox key={i} {...s} reverse={i % 2 !== 0} {...s} />
       ))}
     <Footer/>
     <End/>
