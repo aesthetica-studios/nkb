@@ -11,6 +11,7 @@ import stat3 from '../assets/stat3.svg';
 import stat4 from '../assets/stat4.webp';
 import abouthero from '../assets/abouthero.webp';
 import ceo from '../assets/sudhirgupta.webp';
+import ceo2 from '../assets/sushilsharma.webp';
 import quote from '../assets/quote.webp';
 import construction from '../assets/construction.webp'
 
@@ -26,11 +27,11 @@ function About() {
       image: ceo,
     },
     {
-      name: "Ms. Riya Verma",
-      title: "Co-Founder, NKB Inc.",
+      name: "Mr. Sushil K. Sharma",
+      title: "Partner In NKB Inc.",
       quote:
-        "With innovation at heart and a drive for excellence, I believe in nurturing teams that build impactful solutions.Lorem ipsum dolor sit amet, adipiscing elit, sit et massa mi. Aliquam ut hendrerit urna",
-      image: ceo,
+        "With innovation at heart and a drive for excellence, I believe in nurturing teams that build impactful solutions. True leadership in construction lies not just in managing structures, but in shaping spaces that inspire progress.",
+      image: ceo2,
     }
   ];
 

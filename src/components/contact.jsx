@@ -20,8 +20,8 @@ const Contact = () => {
                             <img src={call} className="contact-icons"/>
                                 <h3>Call us</h3>
                             <span>
-                                <a href="tel:+917838498700" className="phone-link">+91 7838498700</a><br/>
-                                <a href="tel:+91935494409" className="phone-link">+91 935494409</a>
+                                <a href="tel:+919354944409" className="phone-link">+91 9354944409</a><br/>
+                                <a href="tel:+919582234704" className="phone-link">+91 9582234704</a>
                             </span>
                         </div>
 
@@ -29,8 +29,7 @@ const Contact = () => {
                             <img src={email} className="contact-icons"/>
                                 <h3>Mail Us</h3>
                             <span>
-                                <a href="mailto:admin@nkbinc.com" className="mail-link">admin@nkbinc.com</a><br />
-                                <a href="mailto:account@nkbinc.com" className="mail-link">account@nkbinc.com</a>
+                                <a href="mailto:admin@nkbinc.com" className="mail-link">admin@nkbinc.com</a>
                             </span>
                         </div>
                     </div>

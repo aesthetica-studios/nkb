@@ -66,10 +66,11 @@ const Footer = () => {
             <div className="quick-links">
               {/* <span className="quick-icon">📞</span> */}
               {/* <span><a href="#home">Home</a></span> */}
-              <a href="#about" className='flex'><img src={arrow}/> About Us</a>
-              <a href="#services" className='flex'><img src={arrow}/> Our Services</a>
-              <a href="#projects" className='flex'><img src={arrow}/> Projects</a>
-              <a href="#contact" className='flex'><img src={arrow}/> Contact Us</a>
+              <a href="/about" className='flex'><img src={arrow}/> About Us</a>
+              <a href="/services" className='flex'><img src={arrow}/> Our Services</a>
+              <a href="/us" className='flex'><img src={arrow}/> Why Us</a>
+              <a href="/projects" className='flex'><img src={arrow}/> Projects</a>
+              <a href="/contact" className='flex'><img src={arrow}/> Contact Us</a>
               
               
             </div>

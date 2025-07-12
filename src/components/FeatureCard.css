@@ -18,7 +18,8 @@
 
 .feature-icon {
   padding-bottom: 60px;
-  padding-top: 40px;
+  padding-top: 10px;
+  margin-bottom: 1.5rem;
   width: 60px;
   height: 60px;
 }

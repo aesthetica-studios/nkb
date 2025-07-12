@@ -33,10 +33,11 @@
   font-size: 1.8rem;
   margin-bottom: 20px;
   color: #222;
+  padding-left: 58px;
 }
 
 .service-text ul {
-  padding-left: 20px;
+  padding-left: 60px;
 }
 
 .service-text li {

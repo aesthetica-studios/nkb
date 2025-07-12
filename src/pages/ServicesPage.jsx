@@ -4,66 +4,195 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import End from '../components/End'
 
-import img1 from '../assets/card1.webp';
-import img2 from '../assets/card1.webp';
-import img3 from '../assets/card1.webp';
-import img4 from '../assets/card1.webp';
-import img5 from '../assets/card1.webp';
+import img1 from '../assets/img1.webp';
+import img2 from '../assets/img2.webp';
+import img3 from '../assets/img3.webp';
+import img4 from '../assets/img4.webp';
+import img5 from '../assets/img5.webp';
+import img6 from '../assets/img6.webp';
+import img7 from '../assets/img7.webp';
+import img8 from '../assets/img8.webp';
+import img9 from '../assets/img9.webp';
+import img10 from '../assets/img10.webp';
+import img11 from '../assets/img11.webp';
+
 import bg from '../assets/servicesBg.png';
 
 const services = [
   {
-    title: "Construction Management Services",
+    title: "Project Management Services",
     image: img1,
     points: [
-      "Mobilization Plan With Infrastructure Planning",
-      "Preparation Of Weekly Plans",
-      "Review On Running & Final Bills",
-      "Cost Monitoring On Regular Basis",
-      "Process Audits As Per Manual"
-    ]
+      "Detailed strategizing to outline project objectives, milestones, and timelines.",
+
+      "Efficient distribution of manpower, materials, and equipment for optimized project execution.",
+
+      "Proactive identification and mitigation of potential risks to ensure smooth progress.",
+
+      "Facilitating clear communication and collaboration among all parties involved.",
+
+      "Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
+    ],
+    reverse: true
+  },
+  {
+    title: "Construction Management Services",
+    image: img2,
+    points: [
+      "Mobilization plan with infrastructure planning.",
+
+"Preparation of monthly / weekly planning based on Master Bar Chart and available scope of work.",
+
+"Review of Running & Final bills along with material reconciliation , settlement of extra claims if any.",
+
+"Cost Monitoring at regular basis with preparation of cost to complete statements.",
+
+"To carry out Process Audits as defined in company manual."
+    ],
+    reverse: false
   },
   {
     title: "Quality Management Services",
-    image: img2,
+    image: img3,
     points: [
-      "Adherence To Standards At Every Stage",
-      "Compliance With Regulations",
-      "Assessment Throughout Project Lifecycle",
-      "Protocols For Client Satisfaction"
+      "Ensuring compliance with industry regulations and project specifications.",
+
+"Conducting thorough assessments at every stage of the project lifecycle.",
+
+"Implementing protocols to maintain consistent quality standards.",
+
+"Iteratively refining processes to enhance quality and efficiency.",
+
+ "Prioritizing client expectations and feedback to deliver exceptional results."
     ],
     reverse: true
   },
   {
     title: "Budget & Monitoring Services",
-    image: img3,
+    image: img4,
     points: [
-      "Excellence In Time, Budget, and Quality",
-      "Trust With Integrity & Teamwork",
-      "Performance + Ethics = Great Results",
-      "Diversity Unites, Achieving Goals Together"
-    ]
+      "Performance-Pursuing excellence, innovation, and efficiency.",
+
+"Ethics-Honest and fair with uncompromising integrity.",
+
+"Passion-Trustworthy with 'Can Do' attitude .",
+
+"Team Work-WE prioritize teamwork; DREAMWORK is essential.",
+
+"People-Cultural diversity unites, achieving common goals"
+    ],
+    reverse: false
   },
   {
     title: "QS & Contract Services",
-    image: img4,
+    image: img5,
     points: [
-      "Evaluation Based On GFC Drawings",
-      "Vendor Quotes & Contract Strategy",
-      "Tender Document Preparation",
-      "Kick-off Meetings & Vendor Selection"
+      "Quantification based on GFC ( Good for construction ) drawings.",
+
+"Evaluation of vendors as per contract strategy.",
+
+"Working for tender documents as per contract conditions.",
+
+"Analysis of received quotes ,tender negotiations for award of contracts followed by kick-off meeting with selected vendor.",
+
+"Contract Administration."
     ],
     reverse: true
   },
   {
     title: "Project Design Services",
-    image: img5,
+    image: img6,
     points: [
-      "Feasibility, MEP & Structural Coordination",
-      "Design Without Compromising Quality",
-      "Maximizing Financial Returns",
-      "Cost-Effective + Client-Aligned Options"
-    ]
+      "Conduct feasibility studies and finalize design brief, considering MEP requirements.",
+
+"Work with designers, agents, and fund raisers to maximize financial returns while maintaining quality.",
+
+"During design development, explore cost-effective options without altering design intent.",
+
+"Evaluate costing options to align with project's financial goals.",
+
+"Ensure that value engineering efforts do not compromise the project's overall quality standards."
+    ],
+    reverse: false
+  },
+  {
+    title: "ISO Certifications",
+    image: img7,
+    points: [
+      "Detailed strategizing to outline project objectives, milestones, and timelines.",
+
+"Efficient distribution of manpower, materials, and equipment for optimized project execution.",
+
+"Proactive identification and mitigation of potential risks to ensure smooth progress.",
+
+"Facilitating clear communication and collaboration among all parties involved.",
+
+"Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
+    ],
+    reverse: true
+  },
+  {
+    title: "Product Certification",
+    image: img8,
+    points: [
+      "Detailed strategizing to outline project objectives, milestones, and timelines.",
+
+"Efficient distribution of manpower, materials, and equipment for optimized project execution.",
+
+"Proactive identification and mitigation of potential risks to ensure smooth progress.",
+
+"Facilitating clear communication and collaboration among all parties involved.",
+"Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
+    ],
+    reverse: false
+  },
+  {
+    title: "Documentation, Audit and Training",
+    image: img9,
+    points: [
+      "Detailed strategizing to outline project objectives, milestones, and timelines.",
+
+"Efficient distribution of manpower, materials, and equipment for optimized project execution.",
+
+"Proactive identification and mitigation of potential risks to ensure smooth progress.",
+
+"Facilitating clear communication and collaboration among all parties involved.",
+
+"Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
+    ],
+    reverse: true
+  },
+  {
+    title: "Government Registration Services",
+    image: img10,
+    points: [
+      "Detailed strategizing to outline project objectives, milestones, and timelines.",
+
+"Efficient distribution of manpower, materials, and equipment for optimized project execution.",
+
+"Proactive identification and mitigation of potential risks to ensure smooth progress.",
+
+"Facilitating clear communication and collaboration among all parties involved.",
+
+"Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
+    ],
+    reverse: false
+  },
+  {
+    title: "Business Development",
+    image: img11,
+    points: [
+      "Detailed strategizing to outline project objectives, milestones, and timelines.",
+
+"Efficient distribution of manpower, materials, and equipment for optimized project execution.",
+
+"Proactive identification and mitigation of potential risks to ensure smooth progress.",
+
+"Facilitating clear communication and collaboration among all parties involved.",
+
+"Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
+    ],
+    reverse: true
   }
 ];
 

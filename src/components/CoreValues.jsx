@@ -1,45 +1,40 @@
-import React from 'react'
-import ValueCard from './ValueCard'
-import './CoreValues.css'
+import React from 'react';
+import ValueCard from './ValueCard';
+import './CoreValues.css';
 
-import cv1 from '../assets/coreValue1.png'
-import cv2 from '../assets/coreValue2.png'
-import cv3 from '../assets/coreValue3.png'
-import cv4 from '../assets/coreValue4.png'
-import { MoveLeft } from 'lucide-react'
+import cv1 from '../assets/coreValue1.png';
+import cv2 from '../assets/coreValue2.png';
+import cv3 from '../assets/coreValue3.png';
+import cv4 from '../assets/coreValue4.png';
 
 const CoreValues = () => {
   const values = [
     {
       icon: cv1,
       title: 'Trusted Expertise',
-      description: 'Years Of Experience In Worldwide Project Implementations',
-      position: 'left'
+      description: 'Years of experience in worldwide project implementations.',
     },
     {
       icon: cv2,
       title: 'Quality Craftsmanship',
-      description: 'Delivering Superior Quality And Reliability For Complete Satisfaction',
-      position: 'right'
+      description: 'Delivering superior quality and reliability for complete satisfaction.',
     },
     {
       icon: cv3,
       title: 'Sustainable Solutions',
-      description: 'Eco-Friendly Consultancy To Reduce Carbon Footprint And Energy Costs.',
-      position: 'left'
+      description: 'Eco-friendly consultancy to reduce carbon footprint and energy costs.',
     },
     {
       icon: cv4,
       title: 'Personalized Service',
-      description: 'Tailored Construction Solutions To Meet Unique Client Needs',
-      position: 'right'
+      description: 'Tailored construction solutions to meet unique client needs.',
     }
-  ]
+  ];
 
   return (
     <section className="core-values-section">
-      <div className="container" id="val-0">
-        <h2 style={{ marginLeft: '2rem' }}>Core Values</h2>
+      <div className="container">
+        <h2 className="core-values-title">Core Values</h2>
         <div className="value-container">
           {values.map((value, index) => (
             <ValueCard
@@ -47,13 +42,12 @@ const CoreValues = () => {
               icon={value.icon}
               title={value.title}
               description={value.description}
-              position={value.position}
             />
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CoreValues
+export default CoreValues;
