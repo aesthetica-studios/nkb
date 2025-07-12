@@ -6,11 +6,13 @@ import ServicesPage from './pages/ServicesPage.jsx';
 import Us from './pages/Us.jsx'
 import ContactUs from './pages/contactUs.jsx';
 import ProjectPage from './pages/ProjectPage.jsx';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -19,6 +21,7 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path='/us' element={<Us/>}/>
         <Route path='/contact' element={<ContactUs/>}/>
+        
       </Routes>
     </BrowserRouter>
     </>

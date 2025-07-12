@@ -1,53 +1,65 @@
 import React, { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useNavigate } from 'react-router-dom';
 import './Projects.css'
 import pattern1 from '../assets/pattern1.svg'
+import img1 from '../assets/as_proj_1.jpg';
+import img2 from '../assets/as_proj_2.png';
+import img3 from '../assets/as_proj_3.png';
+import img4 from '../assets/as_proj_4.png';
+import img5 from '../assets/as_proj_5.png';
+import img6 from '../assets/as_proj_6.png';
+import img7 from '../assets/as_proj_7.png';
 
 const Projects = () => {
+  const navigate = useNavigate();
+
+const handleBrowseProjects = () => {
+  navigate('/projects');
+};
   const [currentProject, setCurrentProject] = useState(0)
 
   const projects = [
     {
-      title: "Port Check Greater Noida",
-      category: "Plumbing Service",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/api/placeholder/400/300"
+      title: "Individual Capacity with Wave Infratech",
+      
+      image: img1
     },
     {
-      title: "Drainage System Revamp",
+      title: "Individual Capacity with Wave Infratech",
       category: "Civil Infrastructure",
       description: "Ut elit tellus, luctus nec ullamcorper mattis.",
-      image: "/api/placeholder/401/300"
+      image: img2
     },
     {
-      title: "Green Building Plan",
+      title: "Individual Capacity with Shapoorji Pallonji",
       category: "Eco Consultancy",
       description: "Pulvinar dapibus leo, sapient vehicula maximus.",
-      image: "/api/placeholder/402/300"
+      image: img3
     },
     {
-      title: "Rooftop Rain Harvesting",
+      title: "Individual Capacity with Akasva Infra",
       category: "Water Solutions",
       description: "Aliquam vitae nulla, pulvinar non odio nec.",
-      image: "/api/placeholder/403/300"
+      image: img4
     },
     {
-      title: "Industrial Piping Upgrade",
+      title: "Individual Capacity with JMC",
       category: "Mechanical",
       description: "Aenean tempor nisi non eros viverra rhoncus.",
-      image: "/api/placeholder/404/300"
+      image: img5
     },
     {
-      title: "Solar Panel Integration",
+      title: "Individual Capacity with Solutions Inc.",
       category: "Renewable Energy",
       description: "Vivamus efficitur sapien at arcu volutpat laoreet.",
-      image: "/api/placeholder/405/300"
+      image: img6
     },
     {
-      title: "Basement Waterproofing",
+      title: "Individual Capacity with NBCC",
       category: "Construction",
       description: "Nunc vel ipsum vitae libero porttitor consequat.",
-      image: "/api/placeholder/406/300"
+      image: img7
     }
   ]
 
@@ -104,17 +116,22 @@ const Projects = () => {
       : 'hidden';
 
     return (
-      <div key={index} className={`project-card ${position}`}>
-        <div className="project-image">
-          <img src={project.image} alt={project.title} />
-        </div>
-        <div className="project-content">
-          <h3 className="project-title">{project.title}</h3>
-          <p className="project-category">{project.category}</p>
-          <p className="project-description">{project.description}</p>
-        </div>
-      </div>
-    );
+      <div
+  key={index}
+  className={`project-card ${position}`}
+  onClick={handleBrowseProjects}
+
+  style={{ cursor: 'pointer' }}
+>
+  <div className="project-image">
+    <img src={project.image} alt={project.title} />
+  </div>
+  <div className="project-content">
+    <h3 className="project-title">{project.title}</h3>
+  </div>
+</div>
+);
+
   })}
 </div>
  
@@ -135,7 +152,7 @@ const Projects = () => {
         </div>
 
         <div className="projects-footer">
-          <button className="btn btn-secondary">
+          <button className="btn btn-secondary" onClick={handleBrowseProjects}>
             Browse All Projects →
           </button>
         </div>

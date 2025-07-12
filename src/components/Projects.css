@@ -19,16 +19,19 @@
 .projects-carousel {
   position: relative;
   margin-bottom: 3rem;
+  overflow: visible; /* ✅ this is important */
 }
 
 .projects-slider {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  overflow: hidden;
-  margin-bottom: 3rem;
+  align-items: flex-start;  /* ✅ allows top alignment */
+  gap: 3rem;
+  overflow: visible;        /* ✅ allows the scale effect to show */
+  height: auto;
+  margin-bottom: 7rem;             /* ✅ don’t restrict height */
 }
+
 
 .slider-track {
   display: flex;
@@ -38,8 +41,8 @@
 }
 
 .project-card {
-  width: 280px;
-  height: 420px;
+  width: 380px;
+  height: 250px;
   background: #374151;
   border-radius: 20px;
   transition: all 0.4s ease;
@@ -73,17 +76,20 @@
   height: 180px;
 }
 .project-card.active .project-image {
-  height: 220px;
+  height: 250px;
 }
 
 
 .project-card:hover {
   transform: translateY(-5px);
 }
+.project-card.active:hover {
+  transform: scale(1.1) translateY(-10px); /* lock it */
+}
 
 
 .project-image {
-  height: 200px;
+  height: auto;
   overflow: hidden;
   border-radius: 20px 20px 0 0;
 }
@@ -100,10 +106,11 @@
 }
 
 .project-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: white;
-  margin-bottom: 0.5rem;
+  text-align: center;
+  margin: rem 0;
+  color: #fff;
 }
 
 .project-category {
