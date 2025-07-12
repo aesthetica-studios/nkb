@@ -10,20 +10,44 @@ const Projects = () => {
     {
       title: "Port Check Greater Noida",
       category: "Plumbing Service",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: "/api/placeholder/400/300"
     },
     {
-      title: "Port Check Greater Noida",
-      category: "Plumbing Service", 
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-      image: "/api/placeholder/400/300"
+      title: "Drainage System Revamp",
+      category: "Civil Infrastructure",
+      description: "Ut elit tellus, luctus nec ullamcorper mattis.",
+      image: "/api/placeholder/401/300"
     },
     {
-      title: "Port Check Greater Noida",
-      category: "Plumbing Service",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-      image: "/api/placeholder/400/300"
+      title: "Green Building Plan",
+      category: "Eco Consultancy",
+      description: "Pulvinar dapibus leo, sapient vehicula maximus.",
+      image: "/api/placeholder/402/300"
+    },
+    {
+      title: "Rooftop Rain Harvesting",
+      category: "Water Solutions",
+      description: "Aliquam vitae nulla, pulvinar non odio nec.",
+      image: "/api/placeholder/403/300"
+    },
+    {
+      title: "Industrial Piping Upgrade",
+      category: "Mechanical",
+      description: "Aenean tempor nisi non eros viverra rhoncus.",
+      image: "/api/placeholder/404/300"
+    },
+    {
+      title: "Solar Panel Integration",
+      category: "Renewable Energy",
+      description: "Vivamus efficitur sapien at arcu volutpat laoreet.",
+      image: "/api/placeholder/405/300"
+    },
+    {
+      title: "Basement Waterproofing",
+      category: "Construction",
+      description: "Nunc vel ipsum vitae libero porttitor consequat.",
+      image: "/api/placeholder/406/300"
     }
   ]
 
@@ -68,27 +92,36 @@ const Projects = () => {
             <ChevronLeft size={24} />
           </button>
 
-          <div className="projects-grid">
-            {projects.map((project, index) => (
-              <div 
-                key={index}
-                className={`project-card ${index === currentProject ? 'active' : ''}`}
-              >
-                <div className="project-image">
-                  <img src={project.image} alt={project.title} />
-                </div>
-                <div className="project-content">
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-category">{project.category}</p>
-                  <p className="project-description">{project.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <div className="projects-slider">
+  {projects.map((project, index) => {
+    // Determine the relative position
+    const position = index === currentProject
+      ? 'active'
+      : index === (currentProject - 1 + projects.length) % projects.length
+      ? 'prev'
+      : index === (currentProject + 1) % projects.length
+      ? 'next'
+      : 'hidden';
 
-          <button className="carousel-btn next-btn" onClick={nextProject}>
-            <ChevronRight size={24} />
-          </button>
+    return (
+      <div key={index} className={`project-card ${position}`}>
+        <div className="project-image">
+          <img src={project.image} alt={project.title} />
+        </div>
+        <div className="project-content">
+          <h3 className="project-title">{project.title}</h3>
+          <p className="project-category">{project.category}</p>
+          <p className="project-description">{project.description}</p>
+        </div>
+      </div>
+    );
+  })}
+</div>
+ 
+
+<button className="carousel-btn next-btn" onClick={nextProject}>
+  <ChevronRight size={24} />
+</button>
         </div>
 
         <div className="carousel-dots">
