@@ -29,6 +29,9 @@
 .values-icon {
   margin-bottom: 1.5rem;
   color: #f59e0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .values-icon img {
