@@ -3,13 +3,12 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom';
 import './Projects.css'
 import pattern1 from '../assets/pattern1.svg'
-import img1 from '../assets/as_proj_1.jpg';
-import img2 from '../assets/as_proj_2.png';
-import img3 from '../assets/as_proj_3.png';
-import img4 from '../assets/as_proj_4.png';
-import img5 from '../assets/as_proj_5.png';
-import img6 from '../assets/as_proj_6.png';
-import img7 from '../assets/as_proj_7.png';
+import img1 from '../assets/project1.jpg';
+import img2 from '../assets/project2.png';
+import img3 from '../assets/project3.png';
+import img4 from '../assets/project4.jpg';
+import img5 from '../assets/project5.png';
+import img6 from '../assets/project6.png';
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -21,46 +20,37 @@ const handleBrowseProjects = () => {
 
   const projects = [
     {
-      title: "Individual Capacity with Wave Infratech",
+      title: "Freudenberg Regional Corporate Center India Pvt. Ltd (FRCCI)",
       
       image: img1
     },
     {
-      title: "Individual Capacity with Wave Infratech",
-      category: "Civil Infrastructure",
-      description: "Ut elit tellus, luctus nec ullamcorper mattis.",
+      title: "GIR Resort- Junagarh, Gujrat",
       image: img2
     },
     {
-      title: "Individual Capacity with Shapoorji Pallonji",
-      category: "Eco Consultancy",
-      description: "Pulvinar dapibus leo, sapient vehicula maximus.",
+      title: "Lilavati Hospital, GIFT City Ahmedabad, Gujrat",
       image: img3
     },
     {
-      title: "Individual Capacity with Akasva Infra",
+      title: "Adani Shantivan Township Mundra Ahmedabad, Gujrat",
       category: "Water Solutions",
       description: "Aliquam vitae nulla, pulvinar non odio nec.",
       image: img4
     },
     {
-      title: "Individual Capacity with JMC",
+      title: "Zydus Lifesciences Ltd.",
       category: "Mechanical",
       description: "Aenean tempor nisi non eros viverra rhoncus.",
       image: img5
     },
     {
-      title: "Individual Capacity with Solutions Inc.",
+      title: "The Sovereign Thaltej, Ahmedabad (Gujrat)",
       category: "Renewable Energy",
       description: "Vivamus efficitur sapien at arcu volutpat laoreet.",
       image: img6
-    },
-    {
-      title: "Individual Capacity with NBCC",
-      category: "Construction",
-      description: "Nunc vel ipsum vitae libero porttitor consequat.",
-      image: img7
-    }
+     }
+    
   ]
 
   const nextProject = () => {

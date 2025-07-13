@@ -3,7 +3,7 @@ import ServiceBox from '../components/ServiceBox';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import End from '../components/End'
-
+import pattern1 from '../assets/pattern1.svg'
 import img1 from '../assets/img1.webp';
 import img2 from '../assets/img2.webp';
 import img3 from '../assets/img3.webp';
@@ -198,22 +198,54 @@ const services = [
 
 const ServicesPage = () => {
   return (
-    <div style={{ 
-        backgroundColor: '#18222D',
-        padding: '60px 0',
-        paddingBottom: '0'
-        }}>
-    <Header/>
-    <div className='container sp-head'>
-      <h1> Our Comprehensive Services</h1>
+    
+    <div style={{ backgroundColor: '#18222D', position: 'relative', overflow: 'hidden', padding: '60px 0 0 0' }}>
+  {/* Background pattern */}
+  <div
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundImage: `url(${pattern1})`,
+      backgroundRepeat: 'repeat',
+      backgroundSize: '600px auto',
+      backgroundPosition: 'center',
+      opacity: 0.15,
+      zIndex: 0,
+      pointerEvents: 'none'
+    }}
+  ></div>
+
+  {/* Content */}
+  <div style={{ position: 'relative', zIndex: 1 }}>
+    <Header />
+    
+    <div className='container sp-head' style={{
+ backgroundColor: '#0e1f31ff',
+    padding: '50px',
+    borderRadius: '16px',
+    boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
+    maxWidth: '2000px',
+    margin: '0 auto 50px auto',
+    position: 'relative',
+    zIndex: 2
+}}>
+      <h1>Our Comprehensive Services</h1>
       <p>From initial concept to successful completion, NKB Inc. delivers expert consultation, precise design management, and reliable industrial support tailored to your needs.</p>
     </div>
-      {services.map((s, i) => (
-        <ServiceBox key={i} {...s} reverse={i % 2 !== 0} {...s} />
-      ))}
-    <Footer/>
-    <End/>
-    </div>
+
+    {services.map((s, i) => (
+      <ServiceBox key={i} {...s} reverse={i % 2 !== 0} {...s}/>
+    ))}
+
+    <Footer />
+    <End />
+  </div>
+</div>
+
+    
   );
 };
 
