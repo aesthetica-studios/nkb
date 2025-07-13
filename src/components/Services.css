@@ -33,9 +33,13 @@
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* ensure full width */
 }
 
 .service-image {
+  width: 100%;
   height: 200px;
   overflow: hidden;
 }
@@ -93,7 +97,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 10;
+  z-index: 2;
 }
 
 .carousel-btn:hover {
@@ -135,23 +139,124 @@
   flex-direction: column;
   align-items: flex-start;
 }
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
+
 
 @media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .services-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  .services-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .service-card {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-width: 260px;
+    margin-right: 1rem;
+  }
+
   .services-grid {
-    grid-template-columns: 1fr;
-    margin: 0;
+    display: none; /* hide normal grid on mobile */
   }
 
   .carousel-btn {
+    display: none; /* optional: hide buttons too */
+  }
+
+
+  /* .services-grid {
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+    gap: 2rem;
+  } */
+
+  /* .service-card {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  } */
+
+  
+
+  .service-image {
+    height: 180px;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .view-all-btn {
+    margin-top: 1rem;
+    align-self: center;
+  }
+  /* MOBILE SWIPE CAROUSEL */
+
+  .services-carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .services-carousel-track::-webkit-scrollbar {
     display: none;
   }
 
   .service-card {
-    margin-bottom: 1rem;
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-left: 1rem;
   }
-}
 
-.smooth-slide {
-  animation: smoothSlideIn 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  will-change: transform, opacity;
+  .carousel-btn,
+  .carousel-dots {
+    display: none;
+  }
+
+  .services-grid {
+    display: none;
+  }
+
+
 }

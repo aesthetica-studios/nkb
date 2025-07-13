@@ -1,3 +1,4 @@
+/* ---------- BASE SECTION ---------- */
 .hero {
   background: #f9fafb;
   padding: 120px 0 80px;
@@ -10,20 +11,19 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  font-family: inter;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
 }
 
+/* ---------- TEXT CONTENT ---------- */
 .hero-subtitle {
   color: #6b7280;
   font-size: 1.1rem;
-  font-family: inter;
   margin-bottom: 0.5rem;
   font-weight: 400;
 }
 
 .hero-title {
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   color: #1f2937;
@@ -38,6 +38,7 @@
   margin-bottom: 2rem;
 }
 
+/* ---------- CTA BUTTON ---------- */
 .hero-btn {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
@@ -47,55 +48,61 @@
   margin-bottom: 3rem;
   border-radius: 9999px;
   color: #1f2937;
-  font-weight: 300;
+  font-weight: 500;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
+.hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
+/* ---------- STATS BLOCK ---------- */
 .hero-stats {
   display: flex;
-  gap: 0.6rem; /* more space between items if needed */
+  gap: 1.2rem;
   border: 1px solid #F4A300;
   border-radius: 32px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.25);
-  padding: 0.2rem 2rem; /* add top/bottom and left/right padding */
-  width: fit-content; /* shrink to fit content width */
-  margin: 0; /* center it if needed */
-  }
-  .stat-divider {
+  padding: 0.4rem 2rem;
+  width: fit-content;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stat-divider {
   width: 1px;
-  background-color: #d1d5db; /* Light gray */
+  background-color: #d1d5db;
   height: 60px;
-  align-self: center;
 }
 
 .stat-item {
-  padding: 1.5rem;
+  padding: 1.2rem 1rem;
   border-radius: 12px;
   text-align: left;
-  min-width: 140px;
+  min-width: 130px;
 }
 
 .stat-number {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
   color: #1f2937;
-  margin-bottom: 0.05rem;
-  
+  margin-bottom: 0.2rem;
 }
 
 .stat-label {
-  font-family: inter;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: #6b7280;
   font-size: 0.9rem;
 }
 
+/* ---------- IMAGE ---------- */
 .hero-image {
   position: relative;
-
 }
 
 .hero-image img {
@@ -103,35 +110,110 @@
   border-radius: 20px;
   width: 100%;
   height: auto;
-  /* box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); */
 }
 
-@media (max-width: 768px) {
-  .hero {
-    padding: 100px 0 60px;
-  }
-
+/* ---------- TABLET SCALING ---------- */
+@media (max-width: 1024px) {
   .hero-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
+    gap: 3rem;
   }
 
   .hero-title {
     font-size: 2.5rem;
   }
 
-  .hero-stats {
-    justify-content: center;
-    gap: 1.5rem;
+  .hero-btn {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
   }
 
-  .stat-item {
-    min-width: 120px;
+  .hero-content {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
   }
-  @media (max-width: 768px) {
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-image {
+    order: 3;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-image img {
+    width: 70%;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-stats {
+    order: 5;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 1.2rem;
+    justify-content: center;
+  }
+
   .stat-divider {
     display: none;
   }
+
+  .stat-item {
+    padding: 0;
+    text-align: center;
+    min-width: unset;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    color: #6b7280;
+  }
+
 }
+.hero-title {
+  order: 1;
+}
+
+.hero-subtitle {
+  order: 2;
+}
+
+.hero-image {
+  order: 1;
+}
+
+.hero-description {
+  order: 4;
+}
+
+.hero-stats {
+  order: 5;
+}
+
+.hero-btn {
+  order: 6;
 }

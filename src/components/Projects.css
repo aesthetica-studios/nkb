@@ -190,4 +190,24 @@
   .carousel-btn {
     display: none;
   }
+  .project-card {
+    display: none !important; /* hide all cards by default */
+  }
+
+  .project-card.active {
+    display: block !important; /* show only the active card */
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .project-card.prev,
+  .project-card.next {
+    display: none !important; /* hide prev and next */
+  }
+
+  .projects-slider {
+    gap: 0; /* remove gap between cards on mobile */
+    justify-content: center;
+  }
+  
 }

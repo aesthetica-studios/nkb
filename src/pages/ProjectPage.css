@@ -189,5 +189,62 @@ to {
     opacity: 1;
     transform: scale(1.02);
 }
+
 }
 
+@media (max-width: 768px) {
+  .projectpage-top {
+    padding: 4rem 2rem;
+  }
+
+  .projectpage-top h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .projectpage-top p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .projectpage-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .projectpage-cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .projectpage-card.projectpage-expanded {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .projectpage-left,
+  .projectpage-right {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .projectpage-left img {
+    height: 180px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .projectpage-right {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .projectpage-desc-list {
+    font-size: 0.95rem;
+  }
+
+  .projectpage-hover-title {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+}

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import styles from './about.css';
+import './about.css';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import End from '../components/End'
@@ -17,21 +17,44 @@ import construction from '../assets/construction.webp'
 
 function About() {
   const [currentSlide, setCurrentSlide] = useState(0);
+const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+const scrollRef = useRef(null);
+useEffect(() => {
+  if (!isMobile || !scrollRef.current) return;
 
+  const handleScroll = () => {
+    const scrollX = scrollRef.current.scrollLeft;
+    const cardWidth = scrollRef.current.offsetWidth;
+    const index = Math.round(scrollX / cardWidth);
+    setCurrentSlide(index);
+  };
+
+  const el = scrollRef.current;
+  el.addEventListener('scroll', handleScroll);
+  return () => el.removeEventListener('scroll', handleScroll);
+}, [isMobile]);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+  window.addEventListener('resize', handleResize);
+  return () => window.removeEventListener('resize', handleResize);
+}, []);
   const leaders = [
-    {
-      name: "Mr. Sudhir Gupta",
-      title: "Partner In NKB Inc.",
-      quote:
-        "Lorem ipsum dolor sit amet, adipiscing elit, sit et massa mi. Aliquam ut hendrerit urna. Pellentesque sit amet sapien rhoncus, mattis ligula consectetur, ultrices mauris. Maecenas vitae mauris tellus. Nullam quis imperdiet augue.",
-      image: ceo,
-    },
     {
       name: "Mr. Sushil K. Sharma",
       title: "Partner In NKB Inc.",
       quote:
         "With innovation at heart and a drive for excellence, I believe in nurturing teams that build impactful solutions. True leadership in construction lies not just in managing structures, but in shaping spaces that inspire progress.",
       image: ceo2,
+    },
+    {
+      name: "Mr. Sudhir Gupta",
+      title: "Partner In NKB Inc.",
+      quote:
+        "Driven by purpose and fueled by collaboration, I strive to empower teams to turn bold ideas into lasting impact. Leadership, to me, is about building more than projects — it’s about creating environments where people and possibilities grow together.",
+      image: ceo,
     }
   ];
 
@@ -165,19 +188,38 @@ function About() {
                 <ChevronLeft size={24} />
               </button>
 
-              <div className="leader-img">
-                <img src={leaders[currentSlide].image} alt={leaders[currentSlide].name} className="about-leader-image" />
-                <div>
-                  <div className="about-quote-icon"><img src={quote} /></div>
-                  <div className="about-leader-card">
-                    <div className="about-leader-info">
-                      <p className="about-leader-quote">{leaders[currentSlide].quote}</p>
-                      <h3 className="about-leader-name">{leaders[currentSlide].name}</h3>
-                      <p className="about-leader-title">{leaders[currentSlide].title}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {isMobile ? (
+  <div className="about-leader-scroll-track" ref={scrollRef}>
+    {leaders.map((leader, index) => (
+      <div className="about-leader-card-wrapper" key={index}>
+        <img src={leader.image} alt={leader.name} className="about-leader-image" />
+        <div className="about-quote-icon"><img src={quote} /></div>
+        <div className="about-leader-card">
+          <div className="about-leader-info">
+            <p className="about-leader-quote">{leader.quote}</p>
+            <h3 className="about-leader-name">{leader.name}</h3>
+            <p className="about-leader-title">{leader.title}</p>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+) : (
+  <div className="leader-img">
+    <img src={leaders[currentSlide].image} alt={leaders[currentSlide].name} className="about-leader-image" />
+    <div>
+      <div className="about-quote-icon"><img src={quote} /></div>
+      <div className="about-leader-card">
+        <div className="about-leader-info">
+          <p className="about-leader-quote">{leaders[currentSlide].quote}</p>
+          <h3 className="about-leader-name">{leaders[currentSlide].name}</h3>
+          <p className="about-leader-title">{leaders[currentSlide].title}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
 
               <button className="carousel-btn next-btn" onClick={handleNext}>
                 <ChevronRight size={24} />

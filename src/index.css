@@ -12,11 +12,31 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
+  padding: 0 1rem;
   margin: 0 auto;
-  padding: 0 20px;
+}
+/* Global Reset and Box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Make all images and content responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
 .btn {
   padding: 12px 24px;
   border: none;

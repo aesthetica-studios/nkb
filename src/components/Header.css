@@ -1,3 +1,4 @@
+/* ---------- HEADER BASE ---------- */
 .header {
   background: #1E2A38;
   padding: 1rem 0;
@@ -6,34 +7,40 @@
   left: 0;
   right: 0;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* ---------- FLEX WRAPPER ---------- */
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
+/* ---------- LOGO ---------- */
 .logo img.logo-img {
-  max-width: 70%;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  max-width: 180px;
+  height: auto;
+  display: block;
 }
 
-
+/* ---------- NAVIGATION ---------- */
 .nav {
   display: flex;
-  gap: 2rem;
   align-items: center;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-link {
   color: #d1d5db;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
   position: relative;
+  transition: color 0.3s ease;
+  padding: 0.25rem 0;
 }
 
 .nav-link:hover,
@@ -44,38 +51,84 @@
 .nav-link.active::after {
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: -4px;
   left: 0;
   right: 0;
   height: 2px;
   background: #f59e0b;
 }
 
+/* ---------- CTA BUTTON ---------- */
 .contact-btn {
   font-size: 0.9rem;
+  padding: 0.5rem 1.2rem;
+  background: transparent;
+  border: 2px solid #f59e0b;
+  border-radius: 6px;
+  color: #f59e0b;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
+.contact-btn:hover {
+  background: #f59e0b;
+  color: #1E2A38;
+}
+
+/* ---------- MENU ICON ---------- */
 .mobile-menu-btn {
   display: none;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
+  z-index: 1001;
+}
+/* Desktop Contact Button */
+.contact-btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #f59e0b;
+  background: transparent;
+  color: #f59e0b;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
+.contact-btn:hover {
+  background: #f59e0b;
+  color: #1E2A38;
+}
+
+/* Hide mobile button by default */
+.contact-btn-mobile {
+  display: none;
+}
+
+/* ---------- TABLET SCALING ---------- */
+@media (max-width: 1024px) {
+  .logo img.logo-img {
+    max-width: 140px;
+  }
+}
+
+/* ---------- MOBILE NAV ---------- */
 @media (max-width: 768px) {
   .nav {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background: #1f2937;
     flex-direction: column;
-    padding: 1rem;
-    transform: translateY(-100%);
+    align-items: flex-start;
+    background: #1f2937;
+    padding: 1.2rem 1.5rem;
+    border-top: 1px solid #374151;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-30px);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
   }
 
   .nav-open {
@@ -84,11 +137,47 @@
     visibility: visible;
   }
 
-  .mobile-menu-btn {
-    display: block;
+  .nav-link {
+    width: 100%;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #374151;
   }
 
   .contact-btn {
     display: none;
   }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .header-content {
+    flex-wrap: nowrap;
+  }
 }
+@media (max-width: 768px) {
+  .contact-btn {
+    display: none;
+  }
+
+  .contact-btn-mobile {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem;
+    border: 2px solid #f59e0b;
+    background: #f59e0b;
+    color: #1E2A38;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .contact-btn-mobile:hover {
+    background: transparent;
+    color: #f59e0b;
+  }
+}
+

@@ -4,6 +4,7 @@
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 4rem 0;
   margin-top: 5rem;
+  
 }
 
 .heros-content {
@@ -38,6 +39,7 @@
   margin-bottom: -65px;
   margin-right: -100px;
   border-radius: 0px; 
+  
 }
 
 .team-photo {
@@ -45,6 +47,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   max-width: 300px;
+  
 }
 
 .team-member {
@@ -83,7 +86,10 @@
   .heros-text h1 {
     font-size: 2rem;
   }
-  
+  .heros-img {
+  width: 80%;
+}
+
   .team-photo {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;

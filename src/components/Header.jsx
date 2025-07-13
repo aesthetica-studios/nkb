@@ -51,9 +51,11 @@ const Header = () => {
             >
               Why Us?
             </NavLink>
+            <NavLink to="/contact" className="btn btn-primary contact-btn">Contact Us</NavLink>
           </nav>
 
-          <NavLink to="/contact" className="btn btn-primary contact-btn">Contact Us</NavLink>
+          
+
 
           <button 
             className="mobile-menu-btn"

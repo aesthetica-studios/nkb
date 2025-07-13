@@ -118,3 +118,94 @@
 .mail-link:hover {
   color: #f59e0b; /* or any highlight color you use */
 }
+/* ---------- RESPONSIVE FOOTER STYLES ---------- */
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 3rem 2rem;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2.5rem 1rem 1.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+
+  .footer-section h3.footer-title {
+    font-size: 1.25rem;
+  }
+
+  .footer-description,
+  .contact-item span,
+  .quick-links a,
+  .hours-item span {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .contact-item {
+    gap: 0.5rem;
+  }
+
+  .contact-icon {
+    width: 18px;
+    margin-top: 0.25rem;
+  }
+
+  .logo-icon img.logo-img {
+    max-width: 65%;
+    margin-bottom: 1rem;
+  }
+
+  .quick-links a {
+    gap: 0.4rem;
+    font-weight: 500;
+  }
+
+  .flex {
+    gap: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .footer-section h3.footer-title {
+    font-size: 1.1rem;
+  }
+
+  .footer-description,
+  .contact-item span,
+  .quick-links a,
+  .hours-item span {
+    font-size: 0.9rem;
+  }
+
+  .logo-icon img.logo-img {
+    max-width: 75%;
+  }
+}
