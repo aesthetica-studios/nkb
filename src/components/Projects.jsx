@@ -93,6 +93,7 @@ const Projects = () => {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
+            <div className="slider-track">
             {projects.map((project, index) => {
               const position =
                 index === currentProject
@@ -119,6 +120,7 @@ const Projects = () => {
                 </div>
               );
             })}
+          </div>
           </div>
 
           <button className="carousel-btn next-btn" onClick={nextProject}>

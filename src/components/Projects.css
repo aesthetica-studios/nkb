@@ -29,8 +29,16 @@
   gap: 3rem;
   overflow: visible;        /* ✅ allows the scale effect to show */
   height: auto;
-  margin-bottom: 7rem;             /* ✅ don’t restrict height */
+  margin-bottom: 7rem; 
+            /* ✅ don’t restrict height */
 }
+
+/* .slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: fit-content;
+  transform: translateX(calc(50vw - 190px)); 
+} */
 
 
 .slider-track {
