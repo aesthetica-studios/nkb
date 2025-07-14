@@ -221,7 +221,7 @@ useEffect(() => {
 )}
 
 
-              <button className="carousel-btn next-btn" onClick={handleNext}>
+              <button className="carousel-btn about-next-btn" onClick={handleNext}>
                 <ChevronRight size={24} />
               </button>
             </div>

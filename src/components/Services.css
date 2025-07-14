@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   width: 100%; /* ensure full width */
-  height: 550px;
+  height: 480px;
 }
 
 .service-image {
@@ -111,8 +111,8 @@
   left: 0;
 }
 
-.next-btn {
-  right: 0;
+.about-next-btn {
+  right: -160px;
 }
 
 .carousel-dots {
