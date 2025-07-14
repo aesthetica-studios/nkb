@@ -308,11 +308,11 @@
   padding: 1rem;
 }
 .prev-btn {
-  left: -110px; /* Pushes the left arrow to the left */
+  left: -80px; /* Pushes the left arrow to the left */
 }
 
 .next-btn {
-  right: -180px; /* Pushes the right arrow to the right */
+  right: -80px; /* Pushes the right arrow to the right */
 }
 .about-leadership-carousel {
   display: flex;
