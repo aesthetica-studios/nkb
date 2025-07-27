@@ -49,26 +49,26 @@ const Services = () => {
       description: "Innovative project design brief focusing on client vision, functional needs, and sustainable solutions for optimized construction outcomes.",
       image: card6
     },
-    {
-      title: "ISO Certification",
-      description: "ISO-certified processes ensuring quality, safety, and efficiency across all project phases in compliance with international standards.",
-      image: card7
-    },
-    {
-      title: "Product Certification",
-      description: "Product certification services ensuring compliance with industry standards, enhancing credibility, and meeting regulatory requirements.",
-      image: card8
-    },
+    // {
+    //   title: "ISO Certification",
+    //   description: "ISO-certified processes ensuring quality, safety, and efficiency across all project phases in compliance with international standards.",
+    //   image: card7
+    // },
+    // {
+    //   title: "Product Certification",
+    //   description: "Product certification services ensuring compliance with industry standards, enhancing credibility, and meeting regulatory requirements.",
+    //   image: card8
+    // },
     {
       title: "Documentation, Audit and Training",
       description: "Documentation, auditing, and training services to ensure compliance, transparency, and continuous professional development.",
       image: card9
     },
-    {
-      title: "Government Registration",
-      description: "End-to-end assistance with government registrations, ensuring legal compliance and smooth project initiation.",
-      image: card10
-    },
+    // {
+    //   title: "Government Registration",
+    //   description: "End-to-end assistance with government registrations, ensuring legal compliance and smooth project initiation.",
+    //   image: card10
+    // },
     {
       title: "Business Development",
       description: "Strategic business development services focused on market expansion, client acquisition, and sustainable growth.",

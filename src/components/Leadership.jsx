@@ -15,7 +15,7 @@ const Leadership = () => {
       <div className="container">
         <div className="leadership-content">
           <div className="leadership-text">
-            <h2 className="section-title">We Are Leader In Industrial Market</h2>
+            <h2 className="section-title">We Are Leader In Construction Market</h2>
             <p className="section-subtitle">
               NKB Inc. Combines A Systematic Team Of Architects, Civil & MEP 
               Engineers And Skilled Site Specialists In Providing Products, Services 

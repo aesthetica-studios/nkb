@@ -99,85 +99,7 @@ useEffect(() => {
         </div>
       </main>
 
-      <section className="about-stats-section">
-        <div className="about-container">
-          <div className="about-stats-grid">
-            <div className="about-stat-item">
-              <div className="about-stat-icon"><img src={stat1} alt="Years of Experience" /></div>
-              <div className="about-stat-text">
-                <div className="about-stat-number">20+</div>
-                <div className="about-stat-label">Years Of Experience</div>
-              </div>
-            </div>
-            <div className="about-stat-item">
-              <div className="about-stat-icon"><img src={stat2} alt="Team Members" /></div>
-              <div className="about-stat-text">
-                <div className="about-stat-number">15</div>
-                <div className="about-stat-label">Team Members</div>
-              </div>
-            </div>
-            <div className="about-stat-item">
-              <div className="about-stat-icon"><img src={stat3} alt="Satisfied Clients" /></div>
-              <div className="about-stat-text">
-                <div className="about-stat-number">232</div>
-                <div className="about-stat-label">Satisfied Clients</div>
-              </div>
-            </div>
-            <div className="about-stat-item">
-              <div className="about-stat-icon"><img src={stat4} alt="Projects Done" /></div>
-              <div className="about-stat-text">
-                <div className="about-stat-number">521</div>
-                <div className="about-stat-label">Projects Done</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="about-values-section">
-        <div className="about-container">
-          <div className="about-values-content">
-            <div className="about-values-text">
-              <h2>Values are like a Compass that Guides Our Ship</h2>
-              <ul className="about-values-list">
-                <li className="about-value-item">
-                  <div className="about-value-number">1</div>
-                  <div className="about-value-content">
-                    <h3>Golden Rule</h3>
-                    <p>Honesty Is Our Foundation Of Deep, Reliable And Trustworthy Relationships. We Believe In Transparency And Accountability In All Our Dealings.</p>
-                  </div>
-                </li>
-                <li className="about-value-item">
-                  <div className="about-value-number">2</div>
-                  <div className="about-value-content">
-                    <h3>Family Oriented</h3>
-                    <p>Family Oriented: Our Clients And Partners Are Family. We Prioritize Long-Term Relationships Built On Trust And Mutual Respect.</p>
-                  </div>
-                </li>
-                <li className="about-value-item">
-                  <div className="about-value-number">3</div>
-                  <div className="about-value-content">
-                    <h3>Relentless Pursuit Of Improvement</h3>
-                    <p>Excellence And Continuous Work Ethic, Constant Improvement Is Our Competitive Edge. We Continuously Strive For Excellence In Everything We Do.</p>
-                  </div>
-                </li>
-                <li className="about-value-item">
-                  <div className="about-value-number">4</div>
-                  <div className="about-value-content">
-                    <h3>Stewardship</h3>
-                    <p>We Take Care Of Others And The Environment. We Are Committed To Sustainable Practices That Benefit Our Clients, Our Projects And Our Community.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="about-values-image">
-              <img src={womenInCap} alt="Professional woman in construction setting" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Section with Arrows */}
+       {/* Leadership Section with Arrows */}
       <section className="about-leadership-section">
         <div className="about-container">
           <div className="about-leadership-content">
@@ -239,7 +161,44 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* Management Section */}
+{/* stat section */}
+      <section className="about-stats-section">
+        <div className="about-container">
+          <div className="about-stats-grid">
+            <div className="about-stat-item">
+              <div className="about-stat-icon"><img src={stat1} alt="Years of Experience" /></div>
+              <div className="about-stat-text">
+                <div className="about-stat-number">35+</div>
+                <div className="about-stat-label">Years Of Experience</div>
+              </div>
+            </div>
+            <div className="about-stat-item">
+              <div className="about-stat-icon"><img src={stat2} alt="Team Members" /></div>
+              <div className="about-stat-text">
+                <div className="about-stat-number">15</div>
+                <div className="about-stat-label">Team Members</div>
+              </div>
+            </div>
+            <div className="about-stat-item">
+              <div className="about-stat-icon"><img src={stat3} alt="Satisfied Clients" /></div>
+              <div className="about-stat-text">
+                <div className="about-stat-number">232</div>
+                <div className="about-stat-label">Satisfied Clients</div>
+              </div>
+            </div>
+            <div className="about-stat-item">
+              <div className="about-stat-icon"><img src={stat4} alt="Projects Done" /></div>
+              <div className="about-stat-text">
+                <div className="about-stat-number">521</div>
+                <div className="about-stat-label">Projects Done</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+       {/* Management Section */}
       <section className="about-management-section">
         <div className="about-container">
           <div className="about-management-content">
@@ -265,6 +224,52 @@ useEffect(() => {
           </div>
         </div>
       </section>
+
+      <section className="about-values-section">
+        <div className="about-container">
+          <div className="about-values-content">
+            <div className="about-values-text">
+              <h2>Values are like a Compass that Guides Our Ship</h2>
+              <ul className="about-values-list">
+                <li className="about-value-item">
+                  <div className="about-value-number">1</div>
+                  <div className="about-value-content">
+                    <h3>Golden Rule</h3>
+                    <p>Honesty Is Our Foundation Of Deep, Reliable And Trustworthy Relationships. We Believe In Transparency And Accountability In All Our Dealings.</p>
+                  </div>
+                </li>
+                <li className="about-value-item">
+                  <div className="about-value-number">2</div>
+                  <div className="about-value-content">
+                    <h3>Family Oriented</h3>
+                    <p>Family Oriented: Our Clients And Partners Are Family. We Prioritize Long-Term Relationships Built On Trust And Mutual Respect.</p>
+                  </div>
+                </li>
+                <li className="about-value-item">
+                  <div className="about-value-number">3</div>
+                  <div className="about-value-content">
+                    <h3>Relentless Pursuit Of Improvement</h3>
+                    <p>Excellence And Continuous Work Ethic, Constant Improvement Is Our Competitive Edge. We Continuously Strive For Excellence In Everything We Do.</p>
+                  </div>
+                </li>
+                <li className="about-value-item">
+                  <div className="about-value-number">4</div>
+                  <div className="about-value-content">
+                    <h3>Stewardship</h3>
+                    <p>We Take Care Of Others And The Environment. We Are Committed To Sustainable Practices That Benefit Our Clients, Our Projects And Our Community.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="about-values-image">
+              <img src={womenInCap} alt="Professional woman in construction setting" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+     
 
       <Footer />
       <End />

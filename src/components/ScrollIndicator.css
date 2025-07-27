@@ -1,0 +1,51 @@
+/* ScrollIndicator.css */
+
+/* Google Fonts for Inter (if not already imported globally in your project) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 2rem; /* Position from the bottom of the viewport */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Updated styles for the circle */
+    background: linear-gradient(to right, #F7C547, #F4A300); /* Applied linear gradient */
+    border-radius: 50%; /* Makes the element a circle */
+    width: 3rem; /* Set a fixed width for the circle */
+    height: 3rem; /* Set a fixed height for the circle */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+    /* End updated styles */
+    gap: 0.5rem; /* Space between the arrow SVG and the "Scroll Down" text */
+    z-index: 100; /* Ensures the indicator stays on top of other content */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade in/out effect */
+    color: #1f2937; /* A professional dark color, matches your website's primary text color */
+    animation: bounce-arrow 1.5s infinite ease-in-out; /* Applied animation to the circle itself */
+}
+
+.scroll-arrow {
+    width: 1.5rem; /* Width of the SVG arrow icon */
+    height: 1.5rem;
+    stroke: currentColor; /* Makes the arrow color inherit from its parent (.scroll-indicator) */
+    /* Removed animation from here as it's now on the parent .scroll-indicator */
+}
+
+.scroll-text {
+    font-family: 'Inter', sans-serif; /* Uses the Inter font for the text */
+    font-size: 0.9rem; /* Font size for the "Scroll Down" text */
+    font-weight: 500; /* Medium font weight for the text */
+    color: currentColor; /* Makes the text color inherit from its parent (.scroll-indicator) */
+}
+
+/* Keyframe animation for the bouncing arrow effect */
+@keyframes bounce-arrow {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at original position */
+    }
+    50% {
+        transform: translateY(10px); /* Move 10 pixels down at the midpoint of the animation */
+    }
+}

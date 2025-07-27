@@ -2,6 +2,7 @@ import React from 'react'
 import './Hero.css'
 import heroImg from '../assets/hero.webp'
 import pattern1 from '../assets/pattern1.svg'
+import ScrollIndicator from './ScrollIndicator'
 
 const Hero = () => {
   return (
@@ -21,6 +22,7 @@ const Hero = () => {
               Anything But Typical. Because Client Problems Are Seldom 
               Typical Either.
             </p>
+            
             <button className="btn btn-primary hero-btn" onClick={() => {
   document.getElementById('service').scrollIntoView({ behavior: 'smooth' });
 }}>
@@ -42,12 +44,20 @@ const Hero = () => {
             </div>
           </div>
           
+          
           <div className="hero-image">
             <img src={heroImg} alt="Construction worker" />
           </div>
+          
         </div>
+        <section id="some-other-section"> 
+                
+            </section>
+            {/* Render the ScrollIndicator */}
+            <ScrollIndicator />
       </div>
     </section>
+    
   )
 }
 

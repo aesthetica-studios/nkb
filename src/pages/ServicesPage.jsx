@@ -115,37 +115,37 @@ const services = [
     ],
     reverse: false
   },
-  {
-    title: "ISO Certifications",
-    image: img7,
-    points: [
-      "Detailed strategizing to outline project objectives, milestones, and timelines.",
+//   {
+//     title: "ISO Certifications",
+//     image: img7,
+//     points: [
+//       "Detailed strategizing to outline project objectives, milestones, and timelines.",
 
-"Efficient distribution of manpower, materials, and equipment for optimized project execution.",
+// "Efficient distribution of manpower, materials, and equipment for optimized project execution.",
 
-"Proactive identification and mitigation of potential risks to ensure smooth progress.",
+// "Proactive identification and mitigation of potential risks to ensure smooth progress.",
 
-"Facilitating clear communication and collaboration among all parties involved.",
+// "Facilitating clear communication and collaboration among all parties involved.",
 
-"Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
-    ],
-    reverse: true
-  },
-  {
-    title: "Product Certification",
-    image: img8,
-    points: [
-      "Detailed strategizing to outline project objectives, milestones, and timelines.",
+// "Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
+//     ],
+//     reverse: true
+//   },
+//   {
+//     title: "Product Certification",
+//     image: img8,
+//     points: [
+//       "Detailed strategizing to outline project objectives, milestones, and timelines.",
 
-"Efficient distribution of manpower, materials, and equipment for optimized project execution.",
+// "Efficient distribution of manpower, materials, and equipment for optimized project execution.",
 
-"Proactive identification and mitigation of potential risks to ensure smooth progress.",
+// "Proactive identification and mitigation of potential risks to ensure smooth progress.",
 
-"Facilitating clear communication and collaboration among all parties involved.",
-"Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
-    ],
-    reverse: false
-  },
+// "Facilitating clear communication and collaboration among all parties involved.",
+// "Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
+//     ],
+//     reverse: false
+//   },
   {
     title: "Documentation, Audit and Training",
     image: img9,
@@ -162,22 +162,22 @@ const services = [
     ],
     reverse: true
   },
-  {
-    title: "Government Registration Services",
-    image: img10,
-    points: [
-      "Detailed strategizing to outline project objectives, milestones, and timelines.",
+//   {
+//     title: "Government Registration Services",
+//     image: img10,
+//     points: [
+//       "Detailed strategizing to outline project objectives, milestones, and timelines.",
 
-"Efficient distribution of manpower, materials, and equipment for optimized project execution.",
+// "Efficient distribution of manpower, materials, and equipment for optimized project execution.",
 
-"Proactive identification and mitigation of potential risks to ensure smooth progress.",
+// "Proactive identification and mitigation of potential risks to ensure smooth progress.",
 
-"Facilitating clear communication and collaboration among all parties involved.",
+// "Facilitating clear communication and collaboration among all parties involved.",
 
-"Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
-    ],
-    reverse: false
-  },
+// "Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
+//     ],
+//     reverse: false
+//   },
   {
     title: "Business Development",
     image: img11,
@@ -192,7 +192,7 @@ const services = [
 
 "Implementing rigorous standards to uphold construction quality and safety throughout the project lifecycle."
     ],
-    reverse: true
+    reverse: false
   }
 ];
 
