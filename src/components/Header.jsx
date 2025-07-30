@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <img src="logo\Group 98.svg" alt="NKB Logo" className="logo-img" ></img>
+            <img src="assets\Group 98.svg" alt="NKB Logo" className="logo-img" ></img>
 
           </div>
           
