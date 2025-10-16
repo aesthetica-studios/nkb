@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
+import img from '../src/assets/Group 98.svg'
 import './Header.css'
 
 const Header = () => {
