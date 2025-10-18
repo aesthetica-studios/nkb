@@ -4,6 +4,7 @@ import arrow from "../assets/arrow.webp"
 import map from "../assets/map.png"
 import email from "../assets/email.png"
 import phone from "../assets/call.png"
+import logo_img from '../assets/Group98.svg'
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
             <div className="footer_section_nkb">
               <div className="footer-logo">
                 <span className="logo-icon">
-                  <img src="logo\Group98.svg" alt="NKB Logo" className="logo-img" />
+                  <img src={logo_img} alt="NKB Logo" className="logo-img" />
                 </span>
               </div>
               <p className="footer-description">
