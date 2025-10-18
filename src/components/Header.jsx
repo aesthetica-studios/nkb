@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
-import img from '../src/assets/Group 98.svg'
+import logo_img from '../assets/Group98.svg'
 import './Header.css'
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <img src="src\assets\Group 98.svg" alt="NKB Logo" className="logo-img" ></img>
+            <img src={logo_img} alt="NKB Logo" className="logo-img" />
 
           </div>
           

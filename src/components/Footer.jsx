@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="footer_section_nkb">
               <div className="footer-logo">
                 <span className="logo-icon">
-                  <img src="logo\Group 98.svg" alt="NKB Logo" className="logo-img" />
+                  <img src="logo\Group98.svg" alt="NKB Logo" className="logo-img" />
                 </span>
               </div>
               <p className="footer-description">
