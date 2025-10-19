@@ -19,13 +19,71 @@ import img13 from '../assets/as_proj_13.jpg';
 import img14 from '../assets/as_proj_14.jpg';
 import img15 from '../assets/as_proj_15.jpg';
 import img16 from '../assets/as_proj_16.jpg';
+import img1a from '../assets/project1.jpg';
+import img2a from '../assets/project2.png';
+import img3a from '../assets/project3.png';
+import img4a from '../assets/project4.jpg';
+import img5a from '../assets/project5.png';
+import img6a from '../assets/project6.png';
 
 // Add more images as needed
 
 import './ProjectPage.css'; // Create and style this file
 
 const projects = [
+  // new projects
 {
+    title: "Freudenberg Regional Corporate Center India Pvt. Ltd (FRCCI)",
+    image: img1a,
+description: [
+    "CLIENT			: Suroj Buildcon Pvt Ltd.",
+"LOCATION		:Plant at Mohali for Freudenberg",
+"BUILTUP AREA   : Industrial Shed 3,00,000 sqft",
+"STATUS			: In Progress"
+  ]},
+  {
+    title: "GIR Resort",
+    image: img2a,
+description: [
+    "CLIENT			: Suroj Buildcon Pvt Ltd.",
+"LOCATION		:   : Junagarh, Gujrat",
+"STATUS			: In Progress"
+  ]},
+  {
+    title: "Lilavati Hospital",
+    image: img3a,
+description: [
+    "CLIENT			: Suroj Buildcon Pvt Ltd.",
+"LOCATION		:GIFT City Ahmedabad, Gujrat",
+"STATUS			: In Progress"
+  ]},
+   {
+    title: "Adani Shantivan Township",
+    image: img4a,
+description: [
+    "CLIENT			: Suroj Buildcon Pvt Ltd.",
+"LOCATION		:Mundra Ahmedabad, Gujrat",
+"STATUS			: In Progress"
+  ]},
+  {
+    title: "Zydus Lifesciences Ltd.",
+    image: img5a,
+description: [
+    "CLIENT			: Suroj Buildcon Pvt Ltd.",
+"LOCATION		:Mundra Ahmedabad, Gujrat",
+"STATUS			: In Progress"
+  ]},
+  {
+    title: "The Sovereign Thaltej",
+    image: img6a,
+description: [
+    "CLIENT			: Suroj Buildcon Pvt Ltd.",
+"LOCATION		:Ahmedabad (Gujrat)",
+"STATUS			: In Progress"
+  ]},
+
+
+  {
     title: "Individual Capacity with Wave Infratech",
     image: img1,
     description: [
@@ -203,7 +261,7 @@ return (
         <p>At NKB Inc., we take pride in being associated with some of the country’s most iconic infrastructure developments. Here's a showcase of our completed and ongoing projects across industries—each reflecting our technical excellence, cost-efficiency, and commitment to quality.</p>
     </div>
     <div className="projectpage-wrapper">
-        <h2 className="projectpage-heading">Associated Projects : </h2>
+        <h2 className="projectpage-heading">Projects : </h2>
         <div className="projectpage-cards-container">
         {projects.map((project, index) => (
             <div
